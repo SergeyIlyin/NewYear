@@ -1,5 +1,30 @@
-﻿<h3>QuizItems Викторина</h3>
-
-@code {
+﻿<h3>Викторина</h3>
+<Container Fluid>
+    <Row>
+        <Card>
+            <CardHeader>Вопрос номер @(_currentQuestionIndex + 1)</CardHeader>
+                <CardBody >
+                    <Alert Color="Color.Success" Visible=true >
+                            @CurrentQuestion?.Text
+                    </Alert>
+                    </CardBody>
+                <CardFooter>
+                    <Buttons Role="ButtonsRole.Toolbar">
+                        <Buttons Margin="Margin.Is2.FromEnd">
+                            <Button Color="Color.Secondary">Назад</Button>
+                        </Buttons>
+                        <Buttons>
+                            <Button Color="Color.Danger">Нет</Button>
+                            <Button Color="Color.Success">Да</Button>
+                        </Buttons>
+                        <Buttons Margin="Margin.Is2.OnX">
+                            <Button Color="Color.Primary">Вперёд</Button>
+                        </Buttons>
+                    </Buttons>
+                </CardFooter>
+            </Card>
+        </Row>
+    </Container>
+    @code {
 
 }

@@ -1,6 +1,7 @@
 using Blazorise;
 using Blazorise.Bootstrap5;
 using Blazorise.Icons.FontAwesome;
+using NewYear.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +10,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 
 AddBlazorise(builder.Services);
-
+AddQuizApp(builder.Services);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -42,4 +43,9 @@ void AddBlazorise(IServiceCollection services)
     services
         .AddBootstrap5Providers()
         .AddFontAwesomeIcons();
+}
+
+void AddQuizApp(IServiceCollection services)
+{
+    services.AddScoped <IQuestionSource, QuestionSource>() ;
 }
