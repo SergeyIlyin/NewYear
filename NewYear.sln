@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewYear.BlazorServer", "NewYear.BlazorServer\NewYear.BlazorServer.csproj", "{54D0783B-BA51-4CE8-8DBD-2D2C2CDE0928}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewYearBlazorise", "NewYearBlazorise\NewYearBlazorise\NewYearBlazorise.csproj", "{61924150-835A-44FE-984F-73693A311415}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewYearBlazorise", "NewYearBlazorise\NewYearBlazorise\NewYearBlazorise.csproj", "{61924150-835A-44FE-984F-73693A311415}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
